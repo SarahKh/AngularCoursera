@@ -6,8 +6,31 @@
   </head>
   <body>
     <h1>HTML5 Custom Attributes</h1>
-    <div>
 
+    <div id="target" ng-app="myTestApp">
+      <section>Section 1
+        <article>Article 1</article>
+      </section>
+      <input type="text" id="input" aria-label="fooéé¹¬¬~~">
     </div>
+
+    <script>
+      // var elem = document.getElementById('target');
+      // console.log(elem);
+      //
+      // var attr = elem.getAttribute('ng-app');
+      // console.log(attr);
+
+      // var elem2 = document.querySelector("[ng-app]");
+      // console.log(elem2);
+      // console.log(elem2.getAttribute('ng-app'));
+
+      var elem = document.getElementById('input');
+      console.log(elem);
+
+      var attr = elem.getAttribute('aria-label');
+      console.log(attr);
+
+    </script>
   </body>
 </html>
